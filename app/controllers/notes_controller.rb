@@ -50,12 +50,12 @@ class NotesController < ApplicationController
     Note.find(params[:id]).destroy
     redirect_to notes_path
   end
-  
+
 
   private
 
   def note_params
-    params.require(:note).permit(:title, :author, :body)
+    params.require(:note).permit(:title, :body)
   end
 
 

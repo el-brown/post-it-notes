@@ -9,9 +9,17 @@
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
+<Layout>
+<Header />
 
   <body>
+  <Content>
+
   <% render 'layouts/navbar' %>
     <%= yield %>
+    </Content>
+  
+  <Footer style={{ textAlign: "center" }}>El Brown ©2021.</Footer>
+  </Layout>
   </body>
 </html>
